@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title><%= title %></title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+  <style>
+    body{
+      color: aliceblue;
+      background-image: url("https://png.pngtree.com/thumb_back/fw800/background/20190222/ourmid/pngtree-blue-flowers-and-plain-background-colorbackgroundcartoon-image_56271.jpg");
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+    
+  </style>
+    
+</head>
+<body>
+
+<div class="container">
+  <h2><center><%= title %></center></h2>
+  <form action="/save" method="post">
+    
+    <div class="form-group">
+      <label for="firstname">First Name:</label>
+      <input type="text" class="form-control" id="firstname" placeholder="Enter First Name" name="firstname" required>
+    </div>
+
+    <div class="form-group">
+        <label for="lastname">Last Name:</label>
+        <input type="text" class="form-control" id="lastname" placeholder="Enter Last Name" name="lastname" required>
+      </div>
+
+    <div class="form-group">
+      <label for="email">Email:</label>
+      <input type="email" class="form-control" id="email" placeholder="Enter  email" name="email" required>
+    </div>
+   
+    <button type="submit" class="btn btn-primary">Submit</button>
+  </form>
+</div>
+
+</body>
+</html>
